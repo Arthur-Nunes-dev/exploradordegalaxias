@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Explorador de Galáxias</title>
+</head>
+<body>
+    <header>
+        <h1>Explorador de Galáxias</h1>
+    </header>
+    <video class="video-backgroud" autoplay muted loop>
+        <source src="video/3194277-hd_1920_1080_30fps.mp4">
+        Seu não surporta videos HTML5
+    </video>
+    <section class="via-lactea">
+        <h2>Via Láctea</h2>
+
+        <div class="planeta">
+            <img src="img/mercurio.png" alt="imagem de Mercúrio">
+            <p id="mercurio" class="nome">
+                Mercúrio
+            </p>
+        </div>
+
+        <div class="planeta">
+            <img src="img/venus.png" alt="imagem do planeta Vênus">
+            <p class="nome" id="venus">
+                Vênus
+            </p>
+        </div>
+
+        <div class="planeta">
+            <img src="img/terra.png" alt="imagem do planeta Terra">
+            <p class="nome" id="terra">
+                Terra
+            </p>
+        </div>
+
+        <div class="planeta">
+            <img src="img/marte.png" alt="imagem do planeta Marte">
+            <p class="nome" id="marte">
+                Marte
+            </p>
+        </div>
+
+        <div class="planeta">
+            <img src="img/jupiter.png" alt="imagem do planeta Júpiter">
+            <p class="nome" id="jupiter">
+                Júpiter
+            </p>
+        </div>
+        <div class="planeta">
+            <img src="img/saturno.png" alt="imagem do planeta Saturno">
+            <p class="nome" id="saturno">
+                Saturno
+            </p>
+        </div>
+
+        <div class="planeta">
+            <img src="img/uranus.png" alt="imagem do planeta Urano">
+            <p class="nome" id="urano">
+                Urano
+            </p>
+        </div>
+
+        <div class="planeta">
+            <img src="img/netuno.png" alt="imagem do planeta Netuno">
+            <p class="nome" id="netuno">
+                Netuno
+            </p>
+        </div>
+    </section>
+
+    <div>
+        <dialog open class="info" id="inf-ok">
+            <p>Clique nos nomes dos planetas para ver informações sobre os mesmos!</p>
+            <button id="ok">Ok</button>
+        </dialog>
+        <dialog class="info" id="inf-mer">
+            <p>Mercúrio é o planeta mais próximo do Sol e o menor do Sistema Solar, com cerca de 4.880 km de diâmetro. Sua superfície é cheia de crateras, parecida com a Lua, e tem temperaturas extremas: -173°C à noite e 427°C durante o dia. Ele quase não tem atmosfera, apenas uma fina camada de gases. Um ano em Mercúrio dura 88 dias terrestres, mas um dia solar (de um nascer do Sol ao outro) leva 176 dias terrestres. É um planeta pequeno, mas cheio de curiosidades!</p>
+            <button id="clo-mer">Ok</button>
+        </dialog>
+
+        <dialog class="info" id="inf-ven">
+            <p>
+                Vênus é o segundo planeta do Sistema Solar e o mais próximo da Terra. Ele tem tamanho e massa parecidos com os da Terra, mas sua atmosfera é densa e tóxica, feita principalmente de dióxido de carbono, com nuvens de ácido sulfúrico. Isso cria um efeito estufa extremo, fazendo de Vênus o planeta mais quente, com temperaturas médias de 465°C, e um dia lá dura 243 dias terrestres, enquanto um ano dura 225 dias. Vênus é um mundo extremo e intrigante!
+            </p>
+            <button id="clo-ven">Ok</button>
+        </dialog>
+
+        <dialog class="info" id="inf-ter">
+            <p>
+                Terra é o terceiro planeta do Sistema Solar e o único conhecido com vida. Tem 12.742 km de diâmetro, atmosfera rica em nitrogênio e oxigênio, e água líquida em sua superfície. Sua estrutura inclui núcleo, manto e crosta, e ela possui um campo magnético protetor. A Lua estabiliza seu eixo e influencia as marés. Com ecossistemas diversos, a Terra é um oasis único no universo. 🌍
+            </p>
+            <button id="clo-ter">Ok</button>
+        </dialog>
+
+        <dialog class="info" id="inf-mar">
+            <p>
+                Marte é o quarto planeta do Sistema Solar, conhecido como "Planeta Vermelho" por causa do óxido de ferro em sua superfície. Com 6.779 km de diâmetro, ele é menor que a Terra, mas tem estações do ano, calotas polares e uma atmosfera fina de dióxido de carbono. Suas temperaturas variam de -125°C a 20°C.
+            </p>
+            <button id="clo-mar">Ok</button>
+        </dialog>
+
+        <dialog class="info" id="inf-jup">
+            <p>
+                Júpiter é o quinto planeta do Sistema Solar, conhecido como o "Gigante Gasoso" por sua composição majoritariamente de hidrogênio e hélio. Com um diâmetro de 139.820 km, ele é o maior planeta do Sistema Solar, podendo caber mais de 1.300 Terras dentro dele. Júpiter não possui uma superfície sólida, mas tem uma atmosfera turbulenta, marcada pela famosa Grande Mancha Vermelha, uma tempestade maior que a Terra que dura séculos. Sua temperatura média é de cerca de -145°C, e ele possui mais de 80 luas, como Europa e Ganímedes, além de um tênue sistema de anéis. Missões como a Juno estudam Júpiter para entender melhor sua formação e influência no Sistema Solar.
+            </p>
+            <button id="clo-jup">Ok</button>
+        </dialog>
+
+        <dialog class="info" id="inf-sat">
+            <p>
+                Saturno é o sexto planeta do Sistema Solar, famoso por seus deslumbrantes anéis, compostos principalmente de gelo e poeira. Conhecido como o "Planeta dos Anéis", ele é um gigante gasoso, com um diâmetro de 116.460 km, sendo o segundo maior planeta do Sistema Solar. Sua atmosfera é composta principalmente de hidrogênio e hélio, e ele possui ventos extremamente rápidos, que podem atingir até 1.800 km/h. Saturno tem mais de 80 luas, com Titã sendo a maior e mais intrigante, possuindo uma atmosfera densa e lagos de metano. Sua temperatura média é de cerca de -178°C, e missões como a Cassini revelaram detalhes fascinantes sobre seus anéis e luas, ajudando a entender melhor esse planeta único.
+            </p>
+            <button id="clo-sat">Ok</button>
+        </dialog>
+
+        <dialog class="info" id="inf-ura">
+            <p>
+                Urano é o sétimo planeta do Sistema Solar, conhecido por sua coloração azul-esverdeada, resultado do metano em sua atmosfera. Ele é um gigante gelado, com um diâmetro de 50.724 km, e sua composição é principalmente de hidrogênio, hélio e gelos de água, amônia e metano. Urano tem uma característica única: seu eixo de rotação é inclinado em cerca de 98°, fazendo com que ele "role" em sua órbita ao redor do Sol. Ele possui 13 anéis tênues e 27 luas conhecidas, como Titânia e Oberon. Sua temperatura média é de aproximadamente -195°C, uma das mais frias do Sistema Solar. Urano foi explorado brevemente pela sonda Voyager 2 em 1986, mas ainda guarda muitos mistérios para futuras missões.
+            </p>
+            <button id="clo-ura">Ok</button>
+        </dialog>
+
+        <dialog class="info" id="inf-net">
+            <p>
+                Netuno é o oitavo e último planeta do Sistema Solar, conhecido por sua intensa cor azul, causada pelo metano em sua atmosfera. Ele é um gigante gelado, com um diâmetro de 49.244 km, e sua composição é semelhante à de Urano, com hidrogênio, hélio, gelos de água, amônia e metano. Netuno é famoso por seus ventos extremamente fortes, que podem atingir até 2.100 km/h, os mais rápidos do Sistema Solar. Ele possui 14 luas conhecidas, sendo Tritão a mais notável, com gêiseres ativos e uma superfície gelada. Netuno também tem um sistema de anéis tênues e uma temperatura média de cerca de -200°C. Descoberto em 1846, ele foi visitado apenas uma vez, pela sonda Voyager 2, em 1989, que revelou detalhes fascinantes sobre esse planeta distante e misterioso.
+            </p>
+            <button id="clo-net">Ok</button>
+        </dialog>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Todos os direitos reservados</p>
+        <p>Desenvolvido por: <a href="">Arthur Nunes</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
